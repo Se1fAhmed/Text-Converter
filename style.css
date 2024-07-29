@@ -82,3 +82,34 @@ select{
     background-position-x:calc(100% - 20px) ;
     background-position-y: 20px;
 }
+/* Add media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .hero textarea {
+        width: 80%;
+        height: 200px;
+    }
+    .row {
+        width: 80%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .row button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero textarea {
+        width: 90%;
+        height: 150px;
+    }
+    .row {
+        width: 90%;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .row button {
+        padding: 5px 10px;
+    }
+}
